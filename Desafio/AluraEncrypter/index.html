@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/Vector.png">
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Alura Encrypter</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <img class="logo" src="./assets/Vector.png" alt="logo alura" />
+      </a>
+    </header>
+
+    <div class="main-container">
+      <div class="first-container">
+        <textarea id="text" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="validator-container">
+          <p>
+            <i class="bx bxs-error-alt fa-solid fa-circle-exclamation"
+              >Only lowercase letters and no accents</i
+            >
+          </p>
+          <div class="botones">
+            <button class="btnEncriptar">Encrypt</button>
+            <button class="btnDecencriptar">Decrypt</button>
+          </div>
+        </div>
+      </div>
+      <div class="second-container">
+        <div class="text-container">
+          <h3>No messages were encrypted</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app/app.js"></script>
+  </body>
+</html>
