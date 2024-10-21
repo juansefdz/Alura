@@ -1,0 +1,12 @@
+services:
+  db:
+    image: mysql 8.0
+    container_name: medic_app_db
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: medic_app
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
